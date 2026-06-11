@@ -1,22 +1,22 @@
-name: Premier Workflow
+name: NodeJS CI
 
 on:
   push:
 
 jobs:
-  hello:
-    runs-on: ubuntu-latest
 
-    steps:
-      - name: Afficher un message
-        run: echo "Bonjour Github Actions"
-  
   test:
+
     runs-on: ubuntu-latest
 
     steps:
 
       - uses: actions/checkout@v4
-      
-      - name: Afficher le working directory
-        run: cat index.html
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - run: npm run dev
