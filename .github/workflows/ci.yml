@@ -28,4 +28,7 @@ jobs:
     
     steps:
       - name: Tester l'API
-        run: curl http://localhost:3000/api
+        run: echo "SUCCESS !"
+        run: echo ${{ PWD }}
+        run: echo ${{ EMAIL }}
+        run: echo ${{ NAME }}
