@@ -19,7 +19,4 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Afficher le working directory
-        run: pwd
-      
-      - name: Afficher tous les fichier
-        run: ls ../
+        run: cat index.html
