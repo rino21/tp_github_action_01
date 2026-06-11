@@ -29,6 +29,6 @@ jobs:
     steps:
       - name: Tester l'API
         run: echo "SUCCESS !"
-        run: echo ${{ PWD }}
-        run: echo ${{ EMAIL }}
-        run: echo ${{ NAME }}
+        run: echo ${{ secrets.PWD }}
+        run: echo ${{ secrets.EMAIL }}
+        run: echo ${{ vars.NAME }}
