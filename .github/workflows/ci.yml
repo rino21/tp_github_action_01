@@ -15,5 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Afficher le contenu du fichier html
-        run: cat index.html
+      - name: Afficher le working directory
+        run: pwd
+      - name: Afficher tous les fichier
+        run: ls
