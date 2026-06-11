@@ -18,4 +18,4 @@ jobs:
       - name: Afficher le working directory
         run: pwd
       - name: Afficher tous les fichier
-        run: ls
+        run: ls ../
