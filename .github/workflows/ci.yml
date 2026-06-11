@@ -31,3 +31,4 @@ jobs:
       - run: echo ${{ secrets.PWD }}
       - run: echo ${{ secrets.EMAIL }}
       - run: echo ${{ vars.NAME }}
+      - run: curl http://localhost:3000/api
