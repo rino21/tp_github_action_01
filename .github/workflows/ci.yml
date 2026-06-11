@@ -10,3 +10,10 @@ jobs:
     steps:
       - name: Afficher un message
         run: echo "Bonjour Github Actions"
+  
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Afficher le contenu du fichier html
+        run: cat index.html
